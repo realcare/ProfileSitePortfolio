@@ -1,0 +1,49 @@
+body {
+  background-color: black;
+}
+#body {
+  background-image: url(/images/mainpage.jfif);
+  height: 1080px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 10px;
+}
+
+#header #header-logo {
+  display: flex;
+  color: white;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+#header #header-logo img {
+  width: 150px;
+}
+
+#header #header-title {
+  font-family: 'Permanent Marker', cursive;
+}
+#header-menu {
+  font-family: 'Architects Daughter', cursive;
+  display: flex;
+  color: white;
+  font-size: 1.6rem;
+  padding-top: 5px;
+}
+
+#header #header-menu ul li {
+  display: block;
+  float: left;
+  padding: 0 20px;
+  font-weight: bolder;
+}
+
+#header #header-menu ul li:last-child {
+  margin-right: 15px;
+}
