@@ -2,8 +2,8 @@ body {
   background-color: black;
 }
 #body {
-  background-image: url(/images/mainpage.jfif);
-  height: 1080px;
+  background-image: url(/images/mainpage);
+  height: 1000px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  height: 139px;
   padding-bottom: 10px;
 }
 
@@ -38,12 +38,47 @@ body {
 }
 
 #header #header-menu ul li {
-  display: block;
+  display: flex;
   float: left;
   padding: 0 20px;
   font-weight: bolder;
 }
+#header #header-menu ul li div {
+  transition: all 0.5s ease;
+}
+#header #header-menu ul li div.colorFade {
+  color: aqua;
+  transition: all 0.5s ease;
+}
 
 #header #header-menu ul li:last-child {
   margin-right: 15px;
+}
+#main-screen {
+  height: 861px;
+}
+
+#main-text {
+  position: relative;
+  color: white;
+  top: 100px;
+  width: 37%;
+  float: right;
+  font-size: 5rem;
+  font-family: 'Rock Salt', cursive;
+  font-weight: bold;
+  color: white;
+  white-space: pre-wrap;
+  text-align: left;
+}
+
+#main-text div {
+  opacity: 0;
+  transition: all 0.5s ease-in;
+  display: inline-block;
+  transform: translateY(50px);
+}
+#main-text div.fade {
+  opacity: 1;
+  transform: translateY(0px);
 }
