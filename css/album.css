@@ -1,0 +1,71 @@
+#container-album {
+  overflow: hidden;
+  display: flex;
+  color: whitesmoke;
+  height: 100vh;
+  margin-bottom: 50px;
+}
+
+#album-years {
+  flex: 1;
+  font-size: 4rem;
+  font-weight: bold;
+}
+#album-years ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+#album-years ul li {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  flex: 1;
+}
+
+#album-info {
+  flex: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#album-info-wrap {
+  border: 10px solid whitesmoke;
+  position: relative;
+  transition: all 1s ease-in-out;
+  color: whitesmoke;
+  display: flex;
+  right: -110%;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin-right: 2rem;
+}
+#album-songlist {
+  border-left: 5px solid whitesmoke;
+  flex: 0.8;
+  font-size: 1.6rem;
+}
+#album-songlist ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#album-songlist ul li {
+  padding: 10px 0;
+}
+#album-songlist ul li a {
+  font-weight: bold;
+}
+
+#album-info-wrap-img {
+  flex: 1;
+  margin-left: 50px;
+}
+#album-info-wrap img {
+  border-radius: 50%;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}

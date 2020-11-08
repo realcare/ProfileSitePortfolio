@@ -1,0 +1,207 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer-info {
+    font-size: 2rem;
+  }
+  #header #header-logo {
+    font-size: 1.5rem;
+  }
+  #header #header-logo img {
+    width: 7rem;
+  }
+  #header-menu {
+    font-size: 1.3rem;
+  }
+  #main-text {
+    font-size: 2.5rem;
+  }
+  #container-album {
+    flex-direction: column;
+  }
+  #album-years {
+    font-size: 2.5rem;
+  }
+  #album-years ul {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+  }
+  #album-years ul li {
+    justify-content: center;
+  }
+
+  #album-info {
+    margin-left: 30px;
+  }
+  #album-songlist {
+    font-size: 1.3rem;
+  }
+  #photo-menu ul li {
+    font-size: 15px;
+    white-space: pre;
+  }
+  #container-photo {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .footer-info {
+    font-size: 1.3rem;
+  }
+  #header #header-logo {
+    font-size: 1.3rem;
+  }
+  #header #header-logo img {
+    width: 5rem;
+  }
+  #header-menu {
+    font-size: 1rem;
+  }
+  #header #header-menu ul li {
+    padding-right: 10px;
+  }
+  #main-text {
+    font-size: 1.7rem;
+  }
+  .profile-wrap {
+    width: 100vw;
+  }
+  .profile {
+    width: 80%;
+    height: 60%;
+  }
+  .profile h1 {
+    font-size: 1rem;
+  }
+  .profile ul li {
+    font-size: 1rem;
+  }
+
+  #container-album {
+    width: 100vw;
+  }
+  #container-gallery {
+    width: 100vw;
+  }
+  #container-album {
+    flex-direction: column;
+  }
+  #album-years {
+    font-size: 2rem;
+  }
+  #album-years ul {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+  }
+  #album-years ul li {
+    justify-content: center;
+  }
+
+  #album-info {
+    margin-left: 20px;
+  }
+  #album-songlist {
+    font-size: 1.1rem;
+  }
+  #photo-menu {
+    width: 70%;
+  }
+  #photo-menu ul {
+    display: grid;
+  }
+  #photo-menu ul li {
+    width: 100%;
+    font-size: 15px;
+  }
+  #container-photo {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .footer-info {
+    font-size: 1rem;
+  }
+  #header #header-logo {
+    font-size: 1rem;
+  }
+  #header #header-logo img {
+    width: 3rem;
+  }
+  #header-menu {
+    font-size: 0.8rem;
+  }
+  #header #header-menu ul li {
+    padding-right: 10px;
+  }
+  #main-text {
+    font-size: 1.7rem;
+  }
+  .profile-wrap {
+    width: 100vw;
+  }
+  .profile {
+    width: 80%;
+    height: 50%;
+  }
+  .profile h1 {
+    font-size: 1rem;
+  }
+  .profile ul li {
+    font-size: 1rem;
+  }
+
+  #container-album {
+    width: 100vw;
+  }
+  #container-gallery {
+    width: 100vw;
+  }
+  #container-album {
+    flex-direction: column;
+  }
+  #album-years {
+    font-size: 1rem;
+  }
+  #album-years ul {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+  }
+  #album-years ul li {
+    justify-content: center;
+  }
+
+  #album-info {
+    margin-left: 10px;
+  }
+  #album-songlist {
+    font-size: 1rem;
+  }
+  #photo-menu {
+    width: 70%;
+  }
+  #photo-menu ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    white-space: nowrap;
+  }
+  #photo-menu ul li {
+    width: 100%;
+    font-size: 15px;
+  }
+  #container-photo {
+    grid-template-columns: 1fr;
+  }
+  #album-info-wrap-img {
+    margin-left: 0px;
+  }
+  #album-info-wrap {
+    margin-right: 0px;
+    border: 5px solid whitesmoke;
+  }
+}

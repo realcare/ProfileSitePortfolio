@@ -1,29 +1,31 @@
-body {
-  background-color: black;
-}
-#body {
-  background-image: url(/images/mainpage);
-  height: 1000px;
-  background-repeat: no-repeat;
+#container-main {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/dan-2.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
 }
 #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 139px;
-  padding-bottom: 10px;
 }
 
 #header #header-logo {
   display: flex;
-  color: white;
+  color: black;
+  justify-content: center;
   align-items: center;
   font-weight: bold;
   font-size: 2rem;
 }
 #header #header-logo img {
-  width: 150px;
+  width: 10rem;
 }
 
 #header #header-title {
@@ -31,54 +33,63 @@ body {
 }
 #header-menu {
   font-family: 'Architects Daughter', cursive;
-  display: flex;
   color: white;
-  font-size: 1.6rem;
-  padding-top: 5px;
+  font-size: 1.5rem;
 }
-
-#header #header-menu ul li {
+#header #header-menu ul {
   display: flex;
-  float: left;
-  padding: 0 20px;
+}
+#header #header-menu ul li {
+  padding-right: 2rem;
   font-weight: bolder;
+  cursor: pointer;
 }
-#header #header-menu ul li div {
+#header #header-menu ul > li div {
+  display: inline-block;
+  transform: scaleX(1) scaleY(1);
   transition: all 0.5s ease;
 }
-#header #header-menu ul li div.colorFade {
-  color: aqua;
-  transition: all 0.5s ease;
-}
-
-#header #header-menu ul li:last-child {
-  margin-right: 15px;
-}
-#main-screen {
-  height: 861px;
+#header #header-menu ul > li div.colorFade {
+  color: limegreen;
+  transform: scaleX(1.4) scaleY(1.4);
 }
 
 #main-text {
+  cursor: pointer;
   position: relative;
-  color: white;
-  top: 100px;
-  width: 37%;
-  float: right;
-  font-size: 5rem;
-  font-family: 'Rock Salt', cursive;
+  top: 40%;
+  width: 100%;
+  white-space: pre-wrap;
+  font-size: 4rem;
+  font-family: 'Shadows Into Light', cursive;
   font-weight: bold;
   color: white;
-  white-space: pre-wrap;
-  text-align: left;
+  text-align: center;
 }
 
 #main-text div {
   opacity: 0;
-  transition: all 0.5s ease-in;
   display: inline-block;
-  transform: translateY(50px);
 }
 #main-text div.fade {
   opacity: 1;
-  transform: translateY(0px);
+  transform: rotateZ(0deg);
+}
+
+#main-text div.mainTextFade {
+  transform: rotateZ(15deg);
+}
+
+#container-profile {
+  position: relative;
+  width: 100%;
+}
+
+.profileLefton {
+  opacity: 1;
+  transform: translateX(0px);
+}
+.profileRightOn {
+  opacity: 1;
+  transform: translateX(0px);
 }

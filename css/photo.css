@@ -1,0 +1,137 @@
+#container-gallery {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#photo-menu {
+  border: 1px solid #dddddd;
+  border-radius: 30px;
+  padding: 4px;
+  margin: 0 0 60px;
+  text-align: center;
+}
+#photo-menu ul {
+  display: flex;
+}
+
+#photo-menu ul li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 25px;
+  font-weight: 500;
+  padding: 0 20px;
+  min-width: 130px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#photo-menu li.active,
+#photo-menu ul li:hover {
+  background-color: #53bff0;
+  color: #fff;
+}
+
+#container-photo {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.photo {
+  position: relative;
+  border: 1px solid whitesmoke;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.photo-overlay {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  text-align: center;
+  cursor: pointer;
+  transform: translateY(-50%) scale(0);
+  transition: all 0.3s ease-in-out;
+}
+.photo-overlay i {
+  width: 50px;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  color: #53bff0;
+  font-size: 20px;
+}
+
+.photo:hover .photo-overlay {
+  color: #fff;
+  transform: translateY(-50%) scale(1);
+}
+
+.img-window {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.img-window img {
+  max-height: 80vh;
+  max-width: 80vw;
+}
+
+.img-btn-next {
+  display: block;
+  padding: 6px 10px;
+  border-radius: 4px;
+  background-color: #111111;
+  position: fixed;
+  top: 48vh;
+  z-index: 500;
+  font-family: 'Permanent Marker', cursive;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+
+.img-btn-next:hover {
+  opacity: 1;
+}
+
+.img-btn-prev {
+  display: block;
+  padding: 6px 10px;
+  border-radius: 4px;
+  background-color: #111111;
+  position: fixed;
+  top: 48vh;
+  z-index: 500;
+  font-family: 'Permanent Marker', cursive;
+  color: whitesmoke;
+  text-transform: uppercase;
+}
+
+.img-btn-prev:hover {
+  opacity: 1;
+}
